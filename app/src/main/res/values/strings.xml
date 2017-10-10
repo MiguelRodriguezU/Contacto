@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Contacto</string>
+    <string name="tv_contacto_confirmar">Confirmar Datos</string>
+    <string name="txt_fec_nacimiento">Fecha de Nacimiento: </string>
+    <string name="txt_tel">Tel: </string>
+    <string name="txt_email">Email: </string>
+    <string name="txt_descripcion">Descripción: </string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_editar">Editar Datos</string>
+
+    <string name="label_nombre">Nombre completo</string>
+    <string name="label_tel">Teléfono</string>
+    <string name="label_email">Email</string>
+    <string name="label_descripcion">Descripción Contacto</string>
+
+    <string name="msg_val_nombre">Debe especificar el nombre del contacto</string>
+    <string name="msg_val_tel">Debe especificar el número de teléfono del contacto</string>
+    <string name="msg_val_email">Debe especificar el email del contacto</string>
+</resources>

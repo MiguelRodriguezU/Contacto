@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/layout_margin"
+    tools:context="dev.mrodriguezul.contacto.DetalleActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/text_confirmar"
+        android:text="@string/tv_contacto_confirmar" />
+
+    <TextView
+        android:id="@+id/tv_contacto_nombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_item_detalle"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_contacto_fec_nacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_item_detalle"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_contacto_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_item_detalle"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_contacto_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_item_detalle"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_contacto_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_item_detalle"
+        android:text="TextView" />
+
+
+    <Button
+        android:text="@string/btn_editar"
+        android:layout_marginTop="@dimen/btn_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/btn_theme"
+        android:id="@+id/btn_editar" />
+
+</LinearLayout>

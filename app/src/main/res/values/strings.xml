@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Contacto</string>
     <string name="tv_contacto_confirmar">Confirmar Datos</string>
-    <string name="txt_fec_nacimiento">Fecha de Nacimiento: </string>
+    <string name="txt_fec_nacimiento">Fec. Nac.: </string>
     <string name="txt_tel">Tel: </string>
     <string name="txt_email">Email: </string>
     <string name="txt_descripcion">Descripción: </string>

@@ -22,34 +22,89 @@
         style="@style/text_item_detalle"
         android:text="TextView" />
 
-    <TextView
-        android:id="@+id/tv_contacto_fec_nacimiento"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text_item_detalle"
-        android:text="TextView" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tv_contacto_telefono"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_fec_nacimiento"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/tv_contacto_fec_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/text_item_detalle"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text_item_detalle"
-        android:text="TextView" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tv_contacto_email"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tel"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/tv_contacto_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/text_item_detalle"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text_item_detalle"
-        android:text="TextView" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tv_contacto_descripcion"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_email"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/tv_contacto_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/text_item_detalle"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/text_item_detalle"
-        android:text="TextView" />
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_descripcion"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/tv_contacto_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/text_item_detalle"
+            android:text="TextView" />
+
+    </LinearLayout>
 
     <Button
         android:text="@string/btn_editar"

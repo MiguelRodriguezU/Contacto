@@ -20,8 +20,6 @@ public class DetalleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         tvNombres = (TextView)findViewById(R.id.tv_contacto_nombres);
         tvFecNac = (TextView)findViewById(R.id.tv_contacto_fec_nacimiento);
         tvTelefono = (TextView)findViewById(R.id.tv_contacto_telefono);
@@ -32,10 +30,10 @@ public class DetalleActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         tvNombres.setText(extras.get(Constantes.NOMBRE).toString());
-        tvFecNac.setText(this.getResources().getString(R.string.txt_fec_nacimiento)+extras.get(Constantes.FECNAC).toString());
-        tvTelefono.setText(this.getResources().getString(R.string.txt_tel)+extras.get(Constantes.TELEFONO).toString());
-        tvEmail.setText(this.getResources().getString(R.string.txt_email)+extras.get(Constantes.EMAIL).toString());
-        tvDescripcion.setText(this.getResources().getString(R.string.txt_descripcion)+extras.get(Constantes.DESCRIPCION).toString());
+        tvFecNac.setText(extras.get(Constantes.FECNAC).toString());
+        tvTelefono.setText(extras.get(Constantes.TELEFONO).toString());
+        tvEmail.setText(extras.get(Constantes.EMAIL).toString());
+        tvDescripcion.setText(extras.get(Constantes.DESCRIPCION).toString());
 
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,15 +44,16 @@ public class DetalleActivity extends AppCompatActivity {
     }
 
     private void editarContacto(){
-        this.finish();
-    }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        Intent returnIntent = new Intent();
-        setResult(this.RESULT_CANCELED, returnIntent);
-        return true;
+        Intent intent = new Intent(this,MainActivity.class);
+        intent.putExtra(Constantes.NOMBRE,tvNombres.getText().toString());
+        intent.putExtra(Constantes.TELEFONO,tvTelefono.getText().toString());
+        intent.putExtra(Constantes.EMAIL,tvEmail.getText().toString());
+        intent.putExtra(Constantes.DESCRIPCION,tvDescripcion.getText().toString());
+        intent.putExtra(Constantes.FECNAC,tvFecNac.getText().toString());
+
+        startActivity(intent);
+        this.finish();
     }
 
 }

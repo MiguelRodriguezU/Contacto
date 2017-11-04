@@ -40,6 +40,9 @@
             <DatePicker
                 android:id="@+id/dtp_contacto_fecnac"
                 android:layout_width="match_parent"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
                 android:layout_height="wrap_content"/>
 
             <android.support.design.widget.TextInputLayout
